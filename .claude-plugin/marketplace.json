@@ -1,0 +1,15 @@
+{
+  "name": "smart-commit",
+  "description": "Claude Code marketplace for the Smart Commit skill.",
+  "owner": {
+    "name": "Harun Huskic"
+  },
+  "plugins": [
+    {
+      "name": "smart-commit",
+      "description": "Review repository changes, write a meaningful commit message, commit, and push the current branch.",
+      "version": "1.0.0",
+      "source": "./"
+    }
+  ]
+}

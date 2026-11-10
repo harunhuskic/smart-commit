@@ -20,6 +20,19 @@ The skill becomes available on the next turn.
 npx skills add https://github.com/harunhuskic/smart-commit --skill smart-commit
 ```
 
+### Claude Code plugin
+
+```bash
+claude plugin marketplace add harunhuskic/smart-commit
+claude plugin install smart-commit@smart-commit
+```
+
+Restart Claude Code or run `/reload-plugins`. The plugin skill is available as `/smart-commit:smart-commit`.
+
+### Claude Code manual installation
+
+Clone this repository, then copy `skills/smart-commit` to `~/.claude/skills/smart-commit` (`%USERPROFILE%\.claude\skills\smart-commit` on Windows). The manually installed skill is available as `/smart-commit`.
+
 ### Manual installation
 
 Clone this repository, then copy `skills/smart-commit` into your agent's skills directory.
@@ -44,11 +57,19 @@ Restart the agent if it does not discover the skill immediately.
 
 ## Use
 
-Invoke it explicitly:
+Invoke it explicitly in Codex:
 
 ```text
 $smart-commit commit and push my current changes
 ```
+
+Or in Claude Code when installed as a plugin:
+
+```text
+/smart-commit:smart-commit commit and push my current changes
+```
+
+With a manual Claude Code installation, use `/smart-commit` instead.
 
 Or ask naturally:
 
