@@ -1,0 +1,4 @@
+interface:
+  display_name: "Smart Commit"
+  short_description: "Stage, summarize, commit, and push git changes"
+  default_prompt: "Use $smart-commit to stage changes, generate a meaningful commit message from the staged diff, commit, and push to the current branch."
